@@ -2,10 +2,11 @@
 <package >
   <metadata>
     <id>$id$</id>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <title>$title$</title>
     <authors>Tom Loten</authors>
     <owners>$author$</owners>
+    <projectUrl>https://github.com/tloten/ef-with-cube</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Initial release</releaseNotes>

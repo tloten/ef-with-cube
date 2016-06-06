@@ -45,7 +45,7 @@ namespace EfWithCube
         {
             lazyGroup1 = new Lazy<Dictionary<G1, A>>(() => CalculateTotals((r) => r.Group1, (r) => r.Group2));
             lazyGroup2 = new Lazy<Dictionary<G2, A>>(() => CalculateTotals((r) => r.Group2, (r) => r.Group1));
-            lazyGrandTotal = new Lazy<A>(() => AllRows.Where(r => r.Group1 == null && r.Group2 == null).FirstOrDefault().Aggregate);
+            lazyGrandTotal = new Lazy<A>(() => AllRows.Where(r => r.Group1 == null && r.Group2 == null).Select(r => r.Aggregate).FirstOrDefault());
         }        
     }
 
